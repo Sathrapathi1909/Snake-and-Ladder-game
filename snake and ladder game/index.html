@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake & Ladder</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🐍 Snake & Ladder 🪜</h1>
+
+    <div id="board" class="board"></div>
+
+    <div class="controls">
+      <button id="rollBtn">🎲 Roll Dice</button>
+      <p id="diceResult">Dice: -</p>
+      <p id="status">Let's play!</p>
+    </div>
+  </div>
+
+  <!-- WIN POPUP -->
+  <div id="winPopup" class="popup hidden">
+    <div class="popup-content">
+      <h2>🎉 You Won!</h2>
+      <p>Great job climbing ladders and escaping snakes!</p>
+      <button onclick="restartGame()">🔄 Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
